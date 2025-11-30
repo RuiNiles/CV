@@ -32,19 +32,18 @@ Detail-oriented backend developer with strong expertise in Java, kotlin and Spri
 *Sky UK* — *London*  
 *09/2023 – Present*
 
-- Designed and implemented scalable RESTful APIs using **Spring Boot** and **PostgreSQL**.
-- Optimized database queries, reducing response time by **30%**.
-- Integrated **CI/CD pipelines** with Jenkins and Docker for automated deployments.
-- Collaborated with frontend teams to ensure seamless API integration.
+- Successfully delivered projects that introduced new internet and telephone service provisioning systems to the republic of Ireland and Italy.
+- Responsible supporting critical application releases.
+- Involved in the onboarding and mentoring of newly hired developers.
 
 ### **Software Developer Internship**
 
 *Sky UK* — *London*  
 *09/2021 – 09/2022*
 
-- Developed microservices architecture for high-traffic applications.
-- Implemented caching strategies using **Redis**, improving performance.
-- Wrote unit and integration tests achieving **90% coverage**.
+- Developed and maintained internet and telephone service provisioning systems.
+- Worked in a highly agile environment utilising pair programming.
+- Managed the recruitment process of additional interns.
 
 ---
 
