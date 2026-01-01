@@ -74,35 +74,27 @@ h2 {
     letter-spacing: 0.5px;
 }
 
-/* ---------- CARD / BLOCK STYLING ---------- */
-.block {
-    background: var(--card-bg);
-    padding: 15px 20px;
-    border-radius: 8px;
-    margin-top: 15px;
-    border: 1px solid var(--border);
-}
-
 ul {
     padding-left: 20px;
 }
 
-.job-title {
+.section-inner {
+    padding-left: 20px;
+}
+
+.title {
     font-weight: bold;
     font-size: 18px;
 }
 
-.company {
+.location {
+    text-align: right;
     font-style: italic;
     color: var(--subtle-text);
 }
 
-.date-location {
+.date {
+    float: right;
     color: var(--subtle-text);
     margin-bottom: 8px;
-}
-
-.education-title {
-    font-weight: bold;
-    font-size: 17px;
 }
