@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Rui Niles – CV</title>
@@ -169,3 +171,4 @@
 <p class="date-location">2019 – 2023 — University of Kent</p>
 
 </body>
+</html>
