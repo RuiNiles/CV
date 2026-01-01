@@ -1,0 +1,108 @@
+/* ---------- THEME VARIABLES ---------- */
+:root {
+    --bg: #ffffff;
+    --text: #1b1b1b;
+    --subtle-text: #555;
+    --link: #005fcc;
+    --border: #e5e5e5;
+
+    --section-bg: #f7f9fc;
+    --card-bg: #fafafa;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #111;
+        --text: #f0f0f0;
+        --subtle-text: #bbbbbb;
+        --link: #4da3ff;
+        --border: #2a2a2a;
+
+        --section-bg: #1a1a1a;
+        --card-bg: #181818;
+    }
+}
+
+/* ---------- BASE STYLING ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 40px auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+    color: var(--subtle-text);
+}
+
+.links {
+    text-align: center;
+    margin: 10px 0 30px;
+}
+
+.links a {
+    color: var(--link);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- SECTION HEADERS ---------- */
+h2 {
+    background: var(--section-bg);
+    padding: 10px 12px;
+    border-left: 5px solid var(--link);
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- CARD / BLOCK STYLING ---------- */
+.block {
+    background: var(--card-bg);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px solid var(--border);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.company {
+    font-style: italic;
+    color: var(--subtle-text);
+}
+
+.date-location {
+    color: var(--subtle-text);
+    margin-bottom: 8px;
+}
+
+.education-title {
+    font-weight: bold;
+    font-size: 17px;
+}
