@@ -10,7 +10,7 @@
 
 ## **Summary**
 
-Detail-oriented backend developer with strong expertise in Java, kotlin and Spring Boot. Experienced in designing APIs, integrating CI/CD pipelines, and working with containerized environments. Committed to writing clean, maintainable code and collaborating effectively in agile teams.
+Detail-oriented backend developer with strong expertise in Java, kotlin as well as Spring Boot and HK2. Experienced in designing APIs, integrating CI/CD pipelines, and working with containerized environments. Committed to writing clean, maintainable code and collaborating effectively in agile teams.
 
 ---
 
@@ -32,7 +32,7 @@ Detail-oriented backend developer with strong expertise in Java, kotlin and Spri
 *Sky UK* — *London*  
 *09/2023 – Present*
 
-- Successfully delivered projects that introduced new internet and telephone service provisioning systems to the republic of Ireland and Italy.
+- Successfully delivered projects that introduced new internet and telephone service provisioning systems to the Republic of Ireland and Italy.
 - Responsible supporting critical application releases.
 - Involved in the onboarding and mentoring of newly hired developers.
 
@@ -41,9 +41,9 @@ Detail-oriented backend developer with strong expertise in Java, kotlin and Spri
 *Sky UK* — *London*  
 *09/2021 – 09/2022*
 
-- Developed and maintained internet and telephone service provisioning systems.
-- Worked in a highly agile environment utilising pair programming.
-- Managed the recruitment process of additional interns.
+- Developed and maintained internet and telephone service provisioning systems for UK customers.
+- Worked in a highly agile environment utilizing pair programming.
+- Managed the recruitment process of new interns.
 
 ---
 
