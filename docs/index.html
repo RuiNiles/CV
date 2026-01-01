@@ -3,81 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <title>Rui Niles – CV</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<h1>Rui Niles</h1>
-<p class="subtitle">Software Developer</p>
+<header class="page-header">
+    <h1>Rui Niles</h1>
+    <p class="subtitle">Software Developer</p>
 
-<div class="links">
-    <a href="mailto:ruiniles141@gmail.com">Email</a> |
-    <a href="https://www.linkedin.com/in/rui-niles-829b371b9/">LinkedIn</a> |
-    <a href="https://github.com/RuiNiles/">GitHub</a>
-</div>
+    <nav class="links" aria-label="Contact links">
+        <a class="link-pill" href="mailto:ruiniles141@gmail.com">Email</a>
+        <a class="link-pill" href="https://www.linkedin.com/in/rui-niles-829b371b9/">LinkedIn</a>
+        <a class="link-pill" href="https://github.com/RuiNiles/">GitHub</a>
+    </nav>
+</header>
 
-<h2>Summary</h2>
-<div class="section-inner">
-    <p>Detail‑oriented backend developer with strong expertise in Java and Kotlin, along with deep experience in Spring
-        Boot
-        and HK2. Skilled in designing APIs, integrating CI/CD pipelines, and working with containerised environments.
-        Committed to writing clean, maintainable code and collaborating effectively in agile teams.</p>
-</div>
+<section aria-labelledby="summary-title">
+    <h2 id="summary-title">Summary</h2>
+    <div class="section-inner">
+        <p>Detail‑oriented backend developer with strong expertise in Java and Kotlin, along with deep experience in
+            Spring Boot and HK2. Skilled in designing APIs, integrating CI/CD pipelines, and working with containerised
+            environments. Committed to writing clean, maintainable code and collaborating effectively in agile
+            teams.</p>
+    </div>
+</section>
 
-<h2>Skills</h2>
-<div class="section-inner">
-    <ul>
-        <li><strong>Languages:</strong> Java, Kotlin</li>
-        <li><strong>Frameworks:</strong> Spring Boot, HK2</li>
-        <li><strong>Database:</strong> OracleDB, Flyway</li>
-        <li><strong>Tools:</strong> Docker, Kubernetes, Git, TeamCity, GoCD, Splunk</li>
-        <li><strong>Cloud:</strong> GCP</li>
-        <li><strong>Other:</strong> ActiveMQ, Kafka</li>
-    </ul>
-</div>
+<section aria-labelledby="skills-title">
+    <h2 id="skills-title">Skills</h2>
+    <div class="section-inner">
+        <ul class="skills-list">
+            <li><strong>Languages:</strong> Java, Kotlin</li>
+            <li><strong>Frameworks:</strong> Spring Boot, HK2</li>
+            <li><strong>Database:</strong> OracleDB, Flyway</li>
+            <li><strong>Tools:</strong> Docker, Kubernetes, Git, TeamCity, GoCD, Splunk</li>
+            <li><strong>Cloud:</strong> GCP</li>
+            <li><strong>Other:</strong> ActiveMQ, Kafka</li>
+        </ul>
+    </div>
+</section>
 
-<h2>Experience</h2>
-<div class="section-inner">
-    <span class="title">Software Engineer</span>
-    <span class="location">Sky UK - London</span>
-    <span class="date">09/2023 – Present</span>
-    <ul>
-        <li>Delivered projects introducing new provisioning systems for broadband and telephony services in the
-            Republic
-            of
-            Ireland and Italy.
-        </li>
-        <li>Supported critical application releases and ensured system stability.</li>
-        <li>Onboarded and mentored newly hired developers.</li>
-    </ul>
+<section aria-labelledby="experience-title">
+    <h2 id="experience-title">Experience</h2>
+    <div class="section-inner">
 
-    <span class="title">Software Developer Internship</span>
-    <span class="location">Sky UK - London</span>
-    <span class="date">09/2021 – 09/2022</span>
-    <ul>
-        <li>Developed and maintained internet and telephony provisioning systems for UK customers.</li>
-        <li>Collaborated in a highly agile environment, utilising pair programming and continuous feedback cycles.
-        </li>
-        <li>Assisted with recruitment and technical evaluations for new interns.</li>
-    </ul>
-</div>
+        <div class="role">
+            <div class="role-meta">
+                <span class="title">Software Engineer</span>
+                <span class="location">Sky UK — London</span>
+                <span class="date">09/2023 – Present</span>
+            </div>
+            <ul>
+                <li>Delivered projects introducing new provisioning systems for broadband and telephony services in the
+                    Republic of Ireland and Italy.
+                </li>
+                <li>Supported critical application releases and ensured system stability.</li>
+                <li>Onboarded and mentored newly hired developers.</li>
+            </ul>
+        </div>
 
-<h2>Certifications</h2>
-<div class="section-inner">
-    <span class="title">Certified SAFe® 6 Practitioner</span>
-    <span class="date">2024 – 2025</span>
-</div>
+        <div class="role">
+            <div class="role-meta">
+                <span class="title">Software Developer Internship</span>
+                <span class="location">Sky UK — London</span>
+                <span class="date">09/2021 – 09/2022</span>
+            </div>
+            <ul>
+                <li>Developed and maintained internet and telephony provisioning systems for UK customers.</li>
+                <li>Collaborated in a highly agile environment, utilising pair programming and continuous feedback
+                    cycles.
+                </li>
+                <li>Assisted with recruitment and technical evaluations for new interns.</li>
+            </ul>
+        </div>
 
-<h2>Education</h2>
-<div class="section-inner">
-    <span class="title">BSc Computer Science with a Year in Industry</span>
-    <span class="location">University of Kent</span>
-    <span class="date">2019 – 2023</span>
-    <ul>
-        <li>First Class (Distinction)</li>
-    </ul>
-</div>
+    </div>
+</section>
+
+<section aria-labelledby="certs-title">
+    <h2 id="certs-title">Certifications</h2>
+    <div class="section-inner">
+        <div class="role">
+            <div class="role-meta">
+                <span class="title">Certified SAFe® 6 Practitioner</span>
+                <span class="date">2024 – 2025</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section aria-labelledby="edu-title">
+    <h2 id="edu-title">Education</h2>
+    <div class="section-inner">
+        <div class="role">
+            <div class="role-meta">
+                <span class="title">BSc Computer Science with a Year in Industry</span>
+                <span class="location">University of Kent</span>
+                <span class="date">2019 – 2023</span>
+            </div>
+            <ul>
+                <li>First Class (Distinction)</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>

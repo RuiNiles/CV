@@ -1,13 +1,18 @@
-/* ---------- THEME VARIABLES ---------- */
 :root {
     --bg: #ffffff;
     --text: #1b1b1b;
     --subtle-text: #555;
     --link: #005fcc;
     --border: #e5e5e5;
-
     --section-bg: #f7f9fc;
     --card-bg: #fafafa;
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,79 +28,124 @@
     }
 }
 
-/* ---------- BASE STYLING ---------- */
+* { box-sizing: border-box; }
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, Helvetica, sans-serif;
     background: var(--bg);
     color: var(--text);
-    margin: 40px auto;
-    max-width: 800px;
+    margin: 0;
     line-height: 1.6;
+    padding: var(--space-5) var(--space-4);
+}
+
+.page-header {
+    max-width: 72ch;
+    margin-inline: auto;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 0;
-    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 36px);
+    margin: 0;
+    letter-spacing: 0.5px;
 }
 
 .subtitle {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 5px;
+    font-size: clamp(16px, 3.8vw, 18px);
+    margin-top: var(--space-2);
     color: var(--subtle-text);
 }
 
 .links {
-    text-align: center;
-    margin: 10px 0 30px;
+    display: grid;
+    gap: var(--space-2);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: var(--space-4) 0 var(--space-6);
 }
 
-.links a {
+.link-pill {
+    display: inline-block;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
     color: var(--link);
     text-decoration: none;
-    margin: 0 10px;
-    font-weight: 500;
+    background: var(--card-bg);
+    min-width: 220px;
+    text-align: center;
 }
 
-.links a:hover {
-    text-decoration: underline;
-}
+.link-pill:hover { text-decoration: underline; }
 
-/* ---------- SECTION HEADERS ---------- */
+section { max-width: 78ch; margin: 0 auto; }
+
 h2 {
     background: var(--section-bg);
-    padding: 10px 12px;
+    padding: var(--space-3) var(--space-4);
     border-left: 5px solid var(--link);
-    margin-top: 40px;
+    margin-top: var(--space-6);
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: clamp(18px, 4vw, 20px);
     letter-spacing: 0.5px;
 }
 
+.section-inner { padding: 0 var(--space-4); }
+
 ul {
-    padding-left: 20px;
+    padding-left: var(--space-5);
+    margin-top: var(--space-3);
 }
 
-.section-inner {
-    padding-left: 20px;
-    padding-right: 20px;
-}
+li + li { margin-top: var(--space-2); }
 
-.title {
-    font-weight: bold;
-    font-size: 18px;
-}
+.role { margin-top: var(--space-4); }
 
-.location {
-    text-align: right;
-    font-style: italic;
+.role-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
     color: var(--subtle-text);
+    margin-bottom: var(--space-2);
 }
 
-.date {
-    float: right;
-    color: var(--subtle-text);
-    margin-bottom: 8px;
+.role .title {
+    font-weight: 700;
+    font-size: clamp(16px, 4vw, 18px);
+    color: var(--text);
+}
+
+.role .location,
+.role .date { font-style: italic; }
+
+@media (min-width: 640px) {
+    body { padding: var(--space-6); }
+
+    .links {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: var(--space-3);
+    }
+
+    .link-pill { min-width: auto; }
+}
+
+@media (min-width: 900px) {
+    section { max-width: 900px; }
+    .section-inner { padding: 0 var(--space-5); }
+
+    .role-meta {
+        flex-direction: row;
+        align-items: baseline;
+        gap: var(--space-4);
+    }
+    .role-meta .date {
+        margin-left: auto;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    .role-meta .title,
+    .role-meta .location { flex: 0 1 auto; }
 }
